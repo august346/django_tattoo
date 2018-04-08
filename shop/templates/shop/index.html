@@ -5,28 +5,61 @@
 {% block title %}
     3a Tatoo
 {% endblock %}
+
+{% block header %}
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#hello" target="_self">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#master" target="_self">Artist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery" target="_self">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts" target="_self">Contacts</a>
+          </li>
+        </ul>
+      </div>
+{% endblock %}
 {% block content %}
 
     <div id="hello" class="row h-100 d-flex flex-column align-items-center justify-content-center">
         <h1 class="text-light mb-5 pb-5">За Tatoo</h1>
 
         <a style="width: 68px; height: 67px; cursor: pointer;" href="#master" target="_self" data-keep-roots="true" data-anchor="cgmd" id="i985ocjglink" class="ca1link mt-5 pt-5">
-            <div data-style="" class="ca1img" id="i985ocjgimg" style="position: relative; width: 68px; height: 67px;">
-                <img id="i985ocjgimgimage" alt="" data-type="image" style="width: 68px; height: 67px; object-fit: contain;" src="https://static.wixstatic.com/media/a896d9_b86ef51df8df4008b2b7b7b175559910.png/v1/fill/w_67,h_67,al_c,usm_0.66_1.00_0.01/a896d9_b86ef51df8df4008b2b7b7b175559910.png">
+            <div data-style="" class="ca1img" style="position: relative; width: 68px; height: 67px;">
+                <img id="hello-butt" alt="" data-type="image" style="width: 68px; height: 67px; object-fit: contain;" src="https://static.wixstatic.com/media/a896d9_b86ef51df8df4008b2b7b7b175559910.png/v1/fill/w_67,h_67,al_c,usm_0.66_1.00_0.01/a896d9_b86ef51df8df4008b2b7b7b175559910.png">
             </div>
         </a>
     </div>
 
     <div class="container">
-    <div id="master" class="d-flex pt-5 flex-wrap">
-        <div id="photo" class="align-self-center">
-            <img class="img-thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-HpDfqKwyJdYO4luhZtVChoZg9pbPoQDQWchc-yW0KZc5rGpq" alt="">
+    <div id="master" class="row">
+        <div class="col-md d-flex pt-5 flex-wrap justify-content-center">
+            <div id="photo" class="">
+                <img class="img-thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-HpDfqKwyJdYO4luhZtVChoZg9pbPoQDQWchc-yW0KZc5rGpq" alt="">
+            </div>
+            <div id="info" class="px-4 text-center">
+                <img id="i98gqqleimgimage" alt="" data-type="image" style="width: 169px; height: 109px; object-fit: contain;" src="https://static.wixstatic.com/media/c33e46_b8483bf05b6e43c1a953b5f0358a5052.png">
+                <h2>Artist</h2>
+                <h5>Firstname Lastname</h5>
+                <p>Креативный тату мастер с медицинским образованием разработает для вас необычные эскизы, перебьет неудачные татуировки. Мастер работает с выездом к вам. Весь используемый материал индивидуальный.</p>
+            </div>
         </div>
-        <div id="info" class="px-4 text-center">
-            <img id="i98gqqleimgimage" alt="" data-type="image" style="width: 169px; height: 109px; object-fit: contain;" src="https://static.wixstatic.com/media/c33e46_b8483bf05b6e43c1a953b5f0358a5052.png">
-            <h2>Artist</h2>
-            <h5>Firstname Lastname</h5>
-            <p>Креативный тату мастер с медицинским образованием разработает для вас необычные эскизы, перебьет неудачные татуировки. Мастер работает с выездом к вам. Весь используемый материал индивидуальный.</p>
+        <hr class="m-3">
+        <div class="col-md d-flex pt-5 flex-wrap justify-content-center">
+            <div id="photo" class="align-self-center">
+                <img class="img-thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-HpDfqKwyJdYO4luhZtVChoZg9pbPoQDQWchc-yW0KZc5rGpq" alt="">
+            </div>
+            <div id="info" class="px-4 text-center">
+                <img id="i98gqqleimgimage" alt="" data-type="image" style="width: 169px; height: 109px; object-fit: contain;" src="https://static.wixstatic.com/media/c33e46_b8483bf05b6e43c1a953b5f0358a5052.png">
+                <h2>Artist</h2>
+                <h5>Firstname Lastname</h5>
+                <p>Креативный тату мастер с медицинским образованием разработает для вас необычные эскизы, перебьет неудачные татуировки. Мастер работает с выездом к вам. Весь используемый материал индивидуальный.</p>
+            </div>
         </div>
     </div>
     </div>
@@ -35,28 +68,30 @@
         <div class="d-flex flex-column align-items-center text-light">
             <img id="i9dxea4dimgimage" alt="" data-type="image" style="width: 141px; height: 89px; object-fit: contain;" src="https://static.wixstatic.com/media/c33e46_d00a503b875e424988debe92c482d1bf.png">
             <h2>Gallery</h2>
-            <div class="d-flex justify-content-center flex-wrap">
-            {% for t in tattooes %}
-                <img class="tattoo m-3" src="{{ t.image.url }}" alt="">
-            {% endfor %}
+            <div class="m-slider">
+                {% for t in tattooes %}
+                    <img class="mx-2 " src="{{  t.image.url }}" alt="">
+                {% endfor %}
             </div>
 
-            <div id="slider" class="hidden">
-                <div class="d-flex flex-column">
-                    <div class="container d-flex flex-column">
-                        <div class="row">
-                            <div class="col">
-                                <div id="close-slider" class="float-right"></div>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center align-items-center">
-                            <a id="left-img" href="">Left</a>
-                            <img id="slider-pic" src="{{ tattooes.0.image.url }}" alt="">
-                            <a id="right-img" href="">Right</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="btn more-btn bg-dark y m-3">
+                <a class="color-light" href="/gallery/">More</a>
             </div>
+
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title text-dark" id="myModalLabel">Tattoo</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                  <div class="modal-body">
+                    <img id="mimg" src="">
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
         </div>
     </div>
 
@@ -79,6 +114,8 @@
 
         <h3>Opening Hours:</h3>
         <p>00:00 - 00:00</p>
+
+        <div id="vk-btn"></div>
     </div>
     </div>
 

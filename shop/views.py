@@ -8,4 +8,8 @@ from shop.models import Good
 
 def index(request):
     tattooes = get_list_or_404(Good)
-    return render(request, 'shop/index.html', {'tattooes': tattooes})
+    return render(request, 'shop/index.html', {'tattooes': tattooes, 'range': range(len(tattooes))})
+
+def gallery(request):
+    tattooes = get_list_or_404(Good)
+    return render(request, 'shop/gallery.html', {'tattooes': tattooes, 'range': range(len(tattooes))})

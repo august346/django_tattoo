@@ -1,0 +1,39 @@
+{% extends 'shop/layout.html' %}
+{% load static %}
+
+{% block title %}
+    3a Tatoo | Gallery
+{% endblock %}
+{% block content %}
+
+    <div id="gallery" class="pt-5">
+        <div class="d-flex flex-column align-items-center text-light container">
+            <img id="i9dxea4dimgimage" alt="" data-type="image" style="width: 141px; height: 89px; object-fit: contain;" src="https://static.wixstatic.com/media/c33e46_d00a503b875e424988debe92c482d1bf.png">
+            <h2>Gallery</h2>
+            <div class="img-set d-flex flex-wrap justify-content-around">
+                {% for t in tattooes %}
+                    <div class="img-wrapper">
+                        <img class="see m-2" src="{{  t.image.url }}" alt="">
+                        <div></div>
+                    </div>
+                {% endfor %}
+            </div>
+
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title text-dark" id="myModalLabel">Tattoo</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                  <div class="modal-body">
+                    <img id="mimg" src="">
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </div>
+    </div>
+
+{% endblock %}

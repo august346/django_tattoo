@@ -1,7 +1,34 @@
+@font-face {
+    font-family: Pacifico;
+    src: url('../fonts/Pacifico-Regular.ttf')  format("truetype"),
+       local('Pacifico');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf')  format("truetype"),
+       local('Roboto');
+}
+
+@font-face {
+    font-family: Scada;
+    src: url('../fonts/Scada-Regular.ttf')  format("truetype"),
+       local('Scada');
+}
+
 * {
     padding: 0;
     margin: 0;
     font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
 }
 
 header {
@@ -36,13 +63,24 @@ header {
     background-size: cover;
 }
 #hello {
-    background-image: url("https://i1.wp.com/amourtattoova.com/wp-content/uploads/2015/08/Tattoo-Background-Test.jpg?fit=1280%2C800&ssl=1");
+    background-image: url("../images/bg-hello.jpg");
     max-width: 100vw;
     margin: 0;
 }
 
 #gallery {
-    background-image: url("https://www.desktop-background.com/download/2560x1440/2014/04/18/749181_other-wallpaper-tattoo-artist-hd-resolution-wallpapers-for-desktop_2880x1620_h.jpg");
+    background-image: url("../images/bg-gallery.jpg");
+}
+
+.more-btn {
+    border: 1px solid whitesmoke;
+    opacity: 0.6;
+}
+
+.more-btn:hover {
+    opacity: 0.8;
+    color: antiquewhite;
+    border-color: antiquewhite;
 }
 
 #photo {
@@ -56,29 +94,75 @@ header {
     font-family: 'Scada', sans-serif;
 }
 
-.hidden {
-    display: none;
+.m-slider {
+    width: 80vw;
+    margin: 40px;
+    position: relative;
 }
 
-#slider {
-    width: 100vw;
-    height: 100vh;
-    z-index: 20;
-    background: rgba(0,0,0,0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
+.m-slider div img, .see {
+    padding: 5px;
+    border-radius: 5px;
+    background: whitesmoke;
+    border: 1px solid silver;
+    position: relative;
+    height: 200px;
 }
-#close-slider {
+
+
+.arrow {
+    position: absolute;
+    top: calc(50% - 25px);
     width: 50px;
     height: 50px;
-    margin: 30px;
-    background: red;
-    align-self: last-baseline;
+    z-index: 99;
+    border-radius: 50%;
+    background-image: none;
+    background: white;
+    opacity: 0.7;
+    color: black;
+    line-height: 50px;
+    text-align: center;
+    font-family: Verdana,sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-#slider-pic {
-    max-height: 70vh;
-    width: 500px;
-    max-width: 80vw;
+.arrow:hover {
+    opacity: 0.8;
+    background: black;
+    color: white;
 }
+
+.slick-prev {
+	left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.modal {
+    width: max-content;
+}
+
+#mimg {
+    width: 100%;
+}
+
+.see {
+    box-sizing: border-box;
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+}
+
+.see:hover {
+    background: #212529;
+    border: 1px solid #212529;
+}
+
+
+
+
