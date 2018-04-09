@@ -29,21 +29,32 @@
 {% endblock %}
 {% block content %}
 
-    <div id="hello" class="row h-100 d-flex flex-column align-items-center justify-content-center">
-        <h1 class="text-light mb-5 pb-5">За Tatoo</h1>
+    <div id="hello" class="">
 
-        <a style="width: 68px; height: 67px; cursor: pointer;" href="#master" target="_self" data-keep-roots="true" data-anchor="cgmd" id="i985ocjglink" class="ca1link mt-5 pt-5">
-            <div data-style="" class="ca1img" style="position: relative; width: 68px; height: 67px;">
+        <div class="d-flex flex-wrap align-items-end justify-content-center content">
+            <h1 class="text-light text-center">За Tatoo</h1>
+        </div>
+
+        <div class="d-flex flex-column flex-wrap  align-items-center ">
+
+            <div class="pt-2">
+                <a style="width: 68px; height: 67px; cursor: pointer;" href="#master" target="_self" data-keep-roots="true" data-anchor="cgmd" id="i985ocjglink" class="ca1link d-flex justify-content-center">
                 <img id="hello-butt" alt="" data-type="image" style="width: 68px; height: 67px; object-fit: contain;" src="https://static.wixstatic.com/media/a896d9_b86ef51df8df4008b2b7b7b175559910.png/v1/fill/w_67,h_67,al_c,usm_0.66_1.00_0.01/a896d9_b86ef51df8df4008b2b7b7b175559910.png">
+                </a>
             </div>
-        </a>
+
+            <div class="d-flex align-items-end site-info-block">
+                <p class="site-info-text text-light text-center m-5">Мы искренне считаем украшение тела искусством. Каждый наш мастер — художник со своим стилем. И ещё мы очень скрупулёзно относимся к безопасности и качеству: только одноразовые расходники, только лучшие материалы, тщательная подготовка и обучение мастеров. Дьявол в таких деталях.</p>
+            </div>
+
+        </div>
     </div>
 
     <div class="container">
     <div id="master" class="row">
         <div class="col-md d-flex pt-5 flex-wrap justify-content-center">
             <div id="photo" class="">
-                <img class="img-thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-HpDfqKwyJdYO4luhZtVChoZg9pbPoQDQWchc-yW0KZc5rGpq" alt="">
+                <img class="img-thumbnail" src="{% static 'shop/images/master1.jpeg' %}" alt="">
             </div>
             <div id="info" class="px-4 text-center">
                 <img id="i98gqqleimgimage" alt="" data-type="image" style="width: 169px; height: 109px; object-fit: contain;" src="https://static.wixstatic.com/media/c33e46_b8483bf05b6e43c1a953b5f0358a5052.png">
@@ -55,7 +66,7 @@
         <hr class="m-3">
         <div class="col-md d-flex pt-5 flex-wrap justify-content-center">
             <div id="photo" class="align-self-center">
-                <img class="img-thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-HpDfqKwyJdYO4luhZtVChoZg9pbPoQDQWchc-yW0KZc5rGpq" alt="">
+                <img class="img-thumbnail" src="{% static 'shop/images/master2.jpg' %}" alt="">
             </div>
             <div id="info" class="px-4 text-center">
                 <img id="i98gqqleimgimage" alt="" data-type="image" style="width: 169px; height: 109px; object-fit: contain;" src="https://static.wixstatic.com/media/c33e46_b8483bf05b6e43c1a953b5f0358a5052.png">

@@ -35,7 +35,7 @@ header {
     z-index: 10;
 }
 
-#hello, h2, h3, .navbar-brand {
+#hello div, h2, h3, .navbar-brand {
     font-family: 'Pacifico', cursive;
 }
 
@@ -64,8 +64,15 @@ header {
 }
 #hello {
     background-image: url("../images/bg-hello.jpg");
+    min-height: 100vh;
     max-width: 100vw;
     margin: 0;
+}
+#hello div {
+    height: 50%;
+}
+.site-info-text {
+    background-color: rgba(25, 25, 25, 0.72);
 }
 
 #gallery {
@@ -84,7 +91,15 @@ header {
 }
 
 #photo {
-    max-width: 300px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#photo img {
+    min-height: 200px;
 }
 #info {
     max-width: 600px
@@ -193,15 +208,26 @@ header {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .tattoo-img, .see {
-        max-height: 140px;
+@media only screen and (max-width: 650px) {
+    #hello div {
+        height: auto;
+    }
+
+    #hello div:first-child {
+        padding-top: 70px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .tattoo-img, .see {
         max-height: 150px;
+    }
+}
+
+
+@media only screen and (min-width: 700px) {
+    .tattoo-img, .see {
+        max-height: 140px;
     }
 }
 
