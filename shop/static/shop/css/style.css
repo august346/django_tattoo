@@ -100,15 +100,6 @@ header {
     position: relative;
 }
 
-.m-slider div img, .see {
-    padding: 5px;
-    border-radius: 5px;
-    background: whitesmoke;
-    border: 1px solid silver;
-    position: relative;
-    height: 200px;
-}
-
 
 .arrow {
     position: absolute;
@@ -144,23 +135,74 @@ header {
 }
 
 .modal {
-    width: max-content;
 }
 
+.modal-body {
+    padding: 20px;
+    text-align: center;
+}
 #mimg {
+    max-height: 70vh;
+    max-width: 100%;
+}
+
+.tattoo-img, .see {
+    max-height: 250px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.slick-dots li{
+    list-style: none;
+    margin: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: yellow;
+}
+.slick-active {
+    background: white!important;
+}
+.slick-dots li button {
     width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.slick-dots li:hover {
+    background: #f98200;
 }
 
 .see {
-    box-sizing: border-box;
-    height: 200px;
     cursor: pointer;
-    position: relative;
 }
-
 .see:hover {
     background: #212529;
     border: 1px solid #212529;
+}
+
+@media only screen and (max-width: 450px) {
+    .tattoo-img, .see {
+        max-height: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tattoo-img, .see {
+        max-height: 140px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .tattoo-img, .see {
+        max-height: 150px;
+    }
 }
 
 

@@ -7,6 +7,9 @@
 {% endblock %}
 
 {% block header %}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
@@ -68,9 +71,9 @@
         <div class="d-flex flex-column align-items-center text-light">
             <img id="i9dxea4dimgimage" alt="" data-type="image" style="width: 141px; height: 89px; object-fit: contain;" src="https://static.wixstatic.com/media/c33e46_d00a503b875e424988debe92c482d1bf.png">
             <h2>Gallery</h2>
-            <div class="m-slider">
+            <div class="m-slider mb-0">
                 {% for t in tattooes %}
-                    <img class="mx-2 " src="{{  t.image.url }}" alt="">
+                    <img class="tattoo-img " src="{{  t.image.url }}" alt="">
                 {% endfor %}
             </div>
 
@@ -98,7 +101,7 @@
     <div class="container">
     <div id="contacts" class="d-flex flex-column align-items-center">
         <img class="align-self-center" alt="" data-type="image" style="width: 172px; height: 108px; object-fit: contain;" src="https://static.wixstatic.com/media/c33e46_02cc20de28c640658fc4f584176ebf27.png/v1/fill/w_108,h_108,al_c,usm_0.66_1.00_0.01/c33e46_02cc20de28c640658fc4f584176ebf27.png">
-        <h1>CONTACT US</h1>
+        <h1 class="text-center">CONTACT US</h1>
         <h3>Contacts</h3>
         <div class="d-flex flex-wrap">
             <div class="p-3">

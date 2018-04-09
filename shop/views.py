@@ -8,6 +8,8 @@ from shop.models import Good
 
 def index(request):
     tattooes = get_list_or_404(Good)
+    if len(tattooes) > 5:
+        tattooes = tattooes[:5]
     return render(request, 'shop/index.html', {'tattooes': tattooes, 'range': range(len(tattooes))})
 
 def gallery(request):

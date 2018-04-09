@@ -4,6 +4,11 @@
 {% block title %}
     3a Tatoo | Gallery
 {% endblock %}
+
+{% block header %}
+    <a class="nav-link text-light" href="/">Home <span class="sr-only">(current)</span></a>
+{% endblock %}
+
 {% block content %}
 
     <div id="gallery" class="pt-5">
@@ -13,7 +18,7 @@
             <div class="img-set d-flex flex-wrap justify-content-around">
                 {% for t in tattooes %}
                     <div class="img-wrapper">
-                        <img class="see m-2" src="{{  t.image.url }}" alt="">
+                        <img class="tattoo-img see m-2" src="{{  t.image.url }}" alt="">
                         <div></div>
                     </div>
                 {% endfor %}
@@ -22,16 +27,14 @@
 
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title text-dark" id="myModalLabel">Tattoo</h4>
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    </div>
-                  <div class="modal-body">
-                    <img id="mimg" src="">
-                  </div>
-                </div><!-- /.modal-content -->
-              </div><!-- /.modal-dialog -->
+                    <div class="modal-content">
+
+                      <div class="modal-body">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <img id="mimg" src="">
+                      </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
         </div>
     </div>
