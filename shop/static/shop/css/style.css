@@ -220,16 +220,10 @@ header {
 
 @media only screen and (max-width: 1000px) {
     .tattoo-img, .see {
-        max-height: 150px;
+        max-height: 200px;
     }
 }
 
-
-@media only screen and (min-width: 700px) {
-    .tattoo-img, .see {
-        max-height: 140px;
-    }
-}
 
 
 
