@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c60bfa1-7b2e-48cb-9a26-5a0654f10202" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/static/shop/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop/static/shop/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="2c60bfa1-7b2e-48cb-9a26-5a0654f10202" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/shop/templates/shop/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="74" column="213" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="213" />
+              <caret line="74" column="224" selection-start-line="74" selection-start-column="224" selection-end-line="74" selection-end-column="224" />
               <folding>
                 <element signature="e#1403#1458#0#HTML" expanded="true" />
                 <element signature="e#1659#1714#0#HTML" expanded="true" />
@@ -168,8 +165,8 @@
         <option value="$PROJECT_DIR$/shop/static/shop/js/script.js" />
         <option value="$PROJECT_DIR$/shop/views.py" />
         <option value="$PROJECT_DIR$/shop/templates/shop/gallery.html" />
-        <option value="$PROJECT_DIR$/shop/templates/shop/index.html" />
         <option value="$PROJECT_DIR$/shop/static/shop/css/style.css" />
+        <option value="$PROJECT_DIR$/shop/templates/shop/index.html" />
       </list>
     </option>
   </component>
@@ -307,7 +304,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5003984" side_tool="true" weight="0.32917318" />
@@ -315,8 +311,8 @@
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="3" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.32917318" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4996016" visible="true" weight="0.32917318" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22231075" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" sideWeight="0.4996016" visible="true" weight="0.32917318" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22231075" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="SciView" order="0" />
@@ -654,7 +650,7 @@
     <entry file="file://$PROJECT_DIR$/shop/templates/shop/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="74" column="213" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="213" />
+          <caret line="74" column="224" selection-start-line="74" selection-start-column="224" selection-end-line="74" selection-end-column="224" />
           <folding>
             <element signature="e#1403#1458#0#HTML" expanded="true" />
             <element signature="e#1659#1714#0#HTML" expanded="true" />
